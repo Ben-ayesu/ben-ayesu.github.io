@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section id="hero" className="bg-gray-100 py-16">
+    <section id="hero" className="py-16">
       <div className="container mx-auto text-center">
         <h1 className="text-4xl font-bold mb-4">
           Hi, I'm Benjamin Ayesu-Attah

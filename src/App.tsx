@@ -7,10 +7,15 @@ import Footer from "./components/Footer/Footer";
 import Skills from "./components/Skills/Skills";
 import "./App.css";
 
-function App() {
+interface AppProps {
+  darkMode: boolean;
+  toggleDarkMode: () => void;
+}
+
+function App({ darkMode, toggleDarkMode }: AppProps) {
   return (
     <div className="App">
-      <Header />
+      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <Hero />
       <About />
       <Skills />
