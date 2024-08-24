@@ -1,4 +1,4 @@
-import { FaStar } from "react-icons/fa";
+import SkillCard from "../SkillCard/SkillCard";
 
 const Skills = () => {
   const skills = [
@@ -57,34 +57,8 @@ const Skills = () => {
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skills.map((skillCategory) => (
-            <div
-              key={skillCategory.category}
-              className="skill-category bg-white rounded-lg shadow-md p-6"
-            >
-          <h3 className="text-xl font-semibold mb-4 text-blue-500">
-            {skillCategory.category}
-          </h3>
-              <ul>
-                {skillCategory.list.map((skill) => (
-                  <li key={skill.name} className="flex items-center mb-2">
-                    <span className="mr-2 font-medium">{skill.name}</span>
-                    <span className="flex">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar
-                          key={i}
-                          className={`h-4 w-4 ${
-                            i < skill.proficiency
-                              ? "text-yellow-400"
-                              : "text-gray-300"
-                          }`}
-                        />
-                      ))}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {skills.map((skillCategory) => (  
+          <SkillCard key={skillCategory.category} category={skillCategory.category} list={skillCategory.list} />
           ))}
         </div>
       </div>
