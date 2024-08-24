@@ -15,6 +15,7 @@ interface AppProps {
 function App({ darkMode, toggleDarkMode }: AppProps) {
   return (
     <div className="App">
+      <div className="container mx-auto px-4">
       <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <Hero />
       <About />
@@ -22,6 +23,7 @@ function App({ darkMode, toggleDarkMode }: AppProps) {
       <Projects />
       <Contact />
       <Footer />
+      </div>
     </div>
   );
 }
