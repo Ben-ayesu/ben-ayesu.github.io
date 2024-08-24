@@ -9,12 +9,12 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
   return (
-    <header className="sticky top-0 w-full z-10 text-gray-800 p-4 bg-white dark:bg-gray-800 dark:text-white transition-colors duration-300">
+    <header className="sticky top-0 w-full z-10 text-gray-800 pt-4 bg-white dark:bg-gray-800 dark:text-white transition-colors duration-300">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">Ben.dev</h1>
         <nav className="flex items-center">
           <ul className="flex space-x-4">
-          <li>
+            <li>
               <a href="#home">Home</a>
             </li>
             <li>
