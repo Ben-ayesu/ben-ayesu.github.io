@@ -7,18 +7,21 @@ const Projects = () => {
       description:
         "An Android app to calculate sales state and provincial tax calculations.",
       technologies: ["Kotlin", "Jetpack Compose", "MVVM"],
-    },
-    {
-      title: "Brainstation Telus Industry Hackathon",
-      description:
-        "Developed an interactive questionnaire to optimize the bundling of Telus TV packages.",
-      technologies: ["JavaScript", "React JS", "SCSS"],
+      link: "https://play.google.com/store/apps/details?id=salestaxcalculator.example.bcsalestax",
     },
     {
       title: "Track it",
       description:
         "A sprint workout tracking app to help athletes log, analyze, and visualize performance data.",
       technologies: ["JavaScript", "Node.js", "React JS", "MySQL", "REST API"],
+      link: "https://sprint-trackit.netlify.app/login",
+    },
+    {
+      title: "Brainstation Telus Industry Hackathon",
+      description:
+        "Developed an interactive questionnaire to optimize the bundling of Telus TV packages.",
+      technologies: ["JavaScript", "React JS", "SCSS"],
+      link: "https://github.com/Ben-ayesu/brainflix",
     },
   ];
 
