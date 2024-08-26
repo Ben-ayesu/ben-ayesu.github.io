@@ -24,7 +24,7 @@ body {
 
 /* Dark Mode */
 body.dark {
-  @apply bg-gray-800 text-white;
+  @apply bg-gray-900 text-white;
 }
 
 @keyframes App-logo-spin {
