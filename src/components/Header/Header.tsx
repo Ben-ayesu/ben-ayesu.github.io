@@ -42,13 +42,14 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="block py-2 px-4 text-2xl font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent rounded md:rounded-none transition duration-150"
+                className="block py-2 px-4 text-2xl font-bold text-gray-700 dark:text-gray-300 md:hover:bg-transparent rounded md:rounded-none transition duration-150 relative group"
                 onClick={() => {
                   setActiveLink("hero");
                   toggleMenu();
                 }}
               >
                 Home
+                <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 rounded-full transition-all duration-300 group-hover:w-full"></span>{" "}
               </Link>
               {activeLink === "hero" && (
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 rounded-full"></div>
@@ -63,13 +64,15 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="block py-2 px-4 text-2xl font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent rounded md:rounded-none transition duration-150"
+                className="block py-2 px-4 text-2xl font-bold text-gray-700 dark:text-gray-300 md:hover:bg-transparent rounded md:rounded-none transition duration-150 relative group"
                 onClick={() => {
                   setActiveLink("about");
                   toggleMenu();
                 }}
               >
                 About
+                <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 rounded-full transition-all duration-300 group-hover:w-full"></span>{" "}
+                {/* Underline effect */}
               </Link>
               {activeLink === "about" && (
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 rounded-full"></div>
@@ -86,13 +89,14 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="block py-2 px-4 text-2xl font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent rounded md:rounded-none transition duration-150"
+                className="block py-2 px-4 text-2xl font-bold text-gray-700 dark:text-gray-300 md:hover:bg-transparent rounded md:rounded-none transition duration-150 relative group"
                 onClick={() => {
                   setActiveLink("projects");
                   toggleMenu();
                 }}
               >
                 Portfolio
+                <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 rounded-full transition-all duration-300 group-hover:w-full"></span>{" "}
               </Link>
               {activeLink === "projects" && (
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 rounded-full"></div>
@@ -107,13 +111,14 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="block py-2 px-4 text-2xl font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent rounded md:rounded-none transition duration-150"
+                className="block py-2 px-4 text-2xl font-bold text-gray-700 dark:text-gray-300 md:hover:bg-transparent rounded md:rounded-none transition duration-150 relative group"
                 onClick={() => {
                   setActiveLink("contact");
                   toggleMenu();
                 }}
               >
                 Contact
+                <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 rounded-full transition-all duration-300 group-hover:w-full"></span>{" "}
               </Link>
               {activeLink === "contact" && (
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 rounded-full"></div>
