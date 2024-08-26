@@ -16,13 +16,13 @@ function App({ darkMode, toggleDarkMode }: AppProps) {
   return (
     <div className="App">
       <div className="container mx-auto px-4">
-      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );
