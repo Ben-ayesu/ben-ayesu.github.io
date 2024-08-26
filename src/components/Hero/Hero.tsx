@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="py-16 min-h-screen md:min-h-[80vh] flex items-center"
+      className="min-h-screen md:min-h-[80vh] flex items-center bg-dots-pattern dark:bg-dots-pattern-dark"
     >
       <div className="container mx-auto flex flex-col items-center justify-center md:flex-row md:justify-between p-4">
         {/* Right Column (Image) - Moved up for mobile */}

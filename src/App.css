@@ -22,9 +22,35 @@ body {
   @apply bg-white text-gray-800;
 }
 
+.bg-dots-pattern {
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 1px
+    ),
+    radial-gradient(circle at 40% 60%, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-repeat: repeat;
+}
+
 /* Dark Mode */
 body.dark {
   @apply bg-gray-900 text-white;
+}
+
+.dark .bg-dots-pattern {
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 40% 60%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    );
+  background-size: 30px 30px;
+  background-repeat: repeat;
 }
 
 @keyframes App-logo-spin {
