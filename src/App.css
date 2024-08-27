@@ -20,6 +20,8 @@
 /* Light Mode (default) */
 body {
   @apply bg-white text-gray-800;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 .bg-dots-pattern {
@@ -36,6 +38,7 @@ body {
 /* Dark Mode */
 body.dark {
   @apply bg-gray-900 text-white;
+  font-family: "Montserrat", sans-serif;
 }
 
 .dark .bg-dots-pattern {
@@ -51,6 +54,64 @@ body.dark {
     );
   background-size: 30px 30px;
   background-repeat: repeat;
+}
+
+/* Skill hover effect */
+.skill:hover {
+  transform: scale(1.05);
+}
+
+.unstyled li a.active {
+  font-weight: bold;
+  color: rgb(59, 130, 246);
+}
+
+.unstyled li a span.num {
+  background-color: #e2e8f0;
+  color: #4a5568;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.skill-item {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-cloud {
+  gap: 2rem;
+}
+
+.unstyled {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .unstyled {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .unstyled li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex.items-center {
+    justify-content: flex-end;
+  }
+}
+
+.unstyled li a:hover {
+  transition: color 0.3s ease;
+  color: rgb(59, 130, 246);
 }
 
 @keyframes App-logo-spin {

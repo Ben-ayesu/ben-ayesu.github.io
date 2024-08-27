@@ -23,7 +23,6 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
  }`}
     >
       <div className="container mx-auto flex justify-between items-center p-4 relative">
-        <h1 className="text-3xl font-bold">Ben.dev</h1>
         {/* Navigation links */}
         <nav
           className={`absolute md:static top-full left-0 w-full md:w-auto md:flex md:items-center ${
