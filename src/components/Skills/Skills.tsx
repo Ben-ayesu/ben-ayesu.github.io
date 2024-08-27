@@ -142,8 +142,8 @@ const Skills = () => {
         </h2>
 
         {/* Category Filter Section */}
-        <ul className="unstyled mb-16 flex items-center">
-          <li className="mr-2">Filter by</li>
+        <ul className="unstyled mb-16 flex items-start">
+          <li className="mx-2">Filter by</li>
           <li className="mx-2">
             <a
               href="#all"
