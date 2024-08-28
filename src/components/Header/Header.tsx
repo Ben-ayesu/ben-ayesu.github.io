@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon, faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSun,
+  faMoon,
+  faBars,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 interface HeaderProps {
   darkMode: boolean;
@@ -147,13 +152,16 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
             </div>
           </label>
           <button
-            className={`md:hidden text-gray-400 dark:text-gray-200 focus:outline-none ${
-              isMenuOpen ? "open" : ""
+            className={`md:hidden text-gray-400 dark:text-gray-200 focus:outline-none transition-transform duration-300  ${
+              isMenuOpen ? "rotate-180" : ""
             }`}
             onClick={toggleMenu}
             aria-label="Toggle navigation"
           >
-            <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
+            <FontAwesomeIcon
+              icon={isMenuOpen ? faXmark : faBars}
+              className="h-6 w-6"
+            />
           </button>
         </div>
       </div>
