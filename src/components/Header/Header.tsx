@@ -53,9 +53,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
-                className={`flex flex-col md:flex-row md:space-x-4 md:mt-0 ${
-                  darkMode ? "bg-gray-900" : "bg-white"
-                } md:bg-transparent p-4 `}
+                className={`flex flex-col md:flex-row md:space-x-4 md:mt-0 md:bg-transparent p-4 dark:bg-[rbg(17,17,17)]`}
               >
                 <li
                   className={`relative ${
