@@ -38,11 +38,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
   }, []);
 
   return (
-    <header
-      className={`sticky top-0 w-full z-10 pt-4 transition-colors duration-300 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
-      }`}
-    >
+    <header className={`top-0 w-full z-10 pt-4`}>
       <div className="container mx-auto flex justify-between items-center p-4 relative">
         {/* Navigation links */}
         <nav
