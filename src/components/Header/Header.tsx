@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,6 +21,22 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Handle window resize to reset the menu state
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMenuOpen(false); // Ensure the menu is closed when switching to desktop mode
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <header
       className={`sticky top-0 w-full z-10 pt-4 transition-colors duration-300 ${
@@ -32,10 +48,10 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         <nav
           className={`absolute md:static top-full left-0 w-full md:w-auto md:flex md:items-center ${
             isMenuOpen ? "block" : "hidden"
-          }`}
+          } md:block`}
         >
           <AnimatePresence>
-            {isMenuOpen && (
+            {(isMenuOpen || window.innerWidth >= 768) && (
               <motion.ul
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
