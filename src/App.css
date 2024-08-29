@@ -17,6 +17,10 @@
   color: #61dafb;
 }
 
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
 /* Light Mode (default) */
 body {
   @apply bg-white text-gray-800;
@@ -37,7 +41,8 @@ body {
 
 /* Dark Mode */
 body.dark {
-  @apply bg-gray-900 text-white;
+  background-color: #111;
+  @apply text-white;
   font-family: "Montserrat", sans-serif;
 }
 
