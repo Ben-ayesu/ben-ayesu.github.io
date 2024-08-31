@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         {/* Navigation links */}
         <nav
           className={`absolute md:static top-full left-0 w-full md:w-auto md:flex md:items-center ${
-            isMenuOpen ? "block" : "hidden"
+            isMenuOpen ? "block bg-white dark:bg-gray-800" : "hidden"
           } md:block`}
         >
           <AnimatePresence>
@@ -159,24 +159,37 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         {/* Hamburger menu for mobile/tablet */}
         <div className="flex items-center">
           {/* Dark mode toggle */}
-          <label
-            htmlFor="dark-mode-toggle"
-            className="flex items-center cursor-pointer mr-4"
+          <button
+            onClick={toggleDarkMode}
+            aria-label="Toggle dark mode"
+            className="dark-mode-switch relative inline-flex items-center justify-center right-4 bottom-1 w-12 h-6 rounded-full bg-gray-300 dark:bg-gray-700 cursor-pointer transition-colors duration-300"
           >
-            <div className="relative">
-              <input
-                type="checkbox"
-                id="dark-mode-toggle"
-                className="sr-only"
-                checked={darkMode}
-                onChange={toggleDarkMode}
+            <span
+              className={`dark-mode-switch-thumb absolute left-0 w-6 h-6 rounded-full bg-white dark:bg-gray-300 flex items-center justify-center transition-transform duration-300 transform ${
+                darkMode ? "translate-x-6" : ""
+              }`}
+            >
+              <FontAwesomeIcon
+                icon={faMoon}
+                className={`h-4 w-4 text-gray-700 transition-opacity duration-300 ${
+                  darkMode ? "opacity-0" : "opacity-100"
+                }`}
               />
               <FontAwesomeIcon
-                icon={darkMode ? faSun : faMoon}
-                className="text-gray-400 dark:text-gray-200 h-7 w-7 fa-fw transition-transform duration-300"
+                icon={faSun}
+                className={`h-4 w-4 text-yellow-500 transition-opacity duration-300 ${
+                  darkMode ? "opacity-100" : "opacity-0"
+                }`}
               />
-            </div>
-          </label>
+            </span>
+            <input
+              type="checkbox"
+              id="dark-mode-toggle"
+              className="sr-only"
+              checked={darkMode}
+              onChange={toggleDarkMode}
+            />
+          </button>
           <button
             className={`md:hidden text-gray-400 dark:text-gray-200 focus:outline-none transition-transform duration-300  ${
               isMenuOpen ? "rotate-180" : ""

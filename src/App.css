@@ -17,6 +17,11 @@
   color: #61dafb;
 }
 
+header {
+  position: relative;
+  z-index: 10;
+}
+
 body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
@@ -49,12 +54,12 @@ body.dark {
 .dark .bg-dots-pattern {
   background-image: radial-gradient(
       circle at 10% 20%,
-      rgba(255, 255, 255, 0.1) 1px,
+      rgba(255, 255, 255, 0.2) 1px,
       transparent 1px
     ),
     radial-gradient(
       circle at 40% 60%,
-      rgba(255, 255, 255, 0.1) 1px,
+      rgba(255, 255, 255, 0.2) 1px,
       transparent 1px
     );
   background-size: 30px 30px;
@@ -93,6 +98,19 @@ body.dark {
 .unstyled {
   display: flex;
   flex-wrap: wrap;
+}
+
+.dark-mode-switch-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-switch-thumb svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 768px) {
