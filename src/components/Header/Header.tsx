@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         {/* Navigation links */}
         <nav
           className={`absolute md:static top-full left-0 w-full md:w-auto md:flex md:items-center ${
-            isMenuOpen ? "block bg-white dark:bg-gray-800" : "hidden"
+            isMenuOpen ? "block bg-white dark:bg-[#111]" : "hidden"
           } md:block`}
         >
           <AnimatePresence>
