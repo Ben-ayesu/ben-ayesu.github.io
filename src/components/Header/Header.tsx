@@ -4,6 +4,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import NavLink from "../NavLink/NavLink";
+import "./Header.scss";
 
 interface HeaderProps {
   darkMode: boolean;
