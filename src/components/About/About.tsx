@@ -1,9 +1,10 @@
 const About = () => {
   return (
-    <section id="about" className="container mx-auto py-16">
-      <div className="flex flex-col md:flex-row items-center md:justify-between">
-        <div className="md:w-1/3 mb-8 md:mb-0 order-1 md:order-1">
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
+    <section id="about" className="container mx-auto py-8 md:py-16">
+      <h2 className="text-5xl font-bold md:mb-12 mb-4">About Me</h2>
+
+      <div className="flex flex-col lg:flex-row items-center lg:items-start md:justify-between md:px-8">
+        <div className="lg:w-1/2 mb-8 md:mb-0 order-1 md:order-1 lg:pr-8">
           <p className="text-lg font-semibold mb-2">
             Fueled by the same drive that propelled me to two Canadian national
             championships, I'm now applying the same competitive drive into my
@@ -23,7 +24,7 @@ const About = () => {
             over 10k downloads, showcasing my practical problem-solving skills.
           </p>
         </div>
-        <div className="md:w-1/2 order-2 md:order-2">
+        <div className="lg:w-1/2 order-2 md:order-2">
           <img
             src="/images/ben-running.jpg"
             alt="Benjamin"

@@ -12,7 +12,6 @@ body {
 body {
   @apply bg-white text-gray-800;
   font-family: "Montserrat", sans-serif;
-  cursor: pointer;
 }
 
 /* Background dots pattern for light mode */
