@@ -31,7 +31,7 @@ const projects = [
       "Developed an interactive questionnaire to optimize the bundling of Telus TV packages.",
     technologies: ["JavaScript", "React JS", "SCSS"],
     link: "https://github.com/Ben-ayesu/brainflix",
-    video: "/trackit.mp4",
+    video: "/out.mp4",
   },
 ];
 

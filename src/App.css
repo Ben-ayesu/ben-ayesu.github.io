@@ -113,7 +113,7 @@ body.dark {
 
 @media (max-width: 768px) {
   .unstyled li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
 }
 
