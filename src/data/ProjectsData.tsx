@@ -2,7 +2,7 @@ const projects = [
   {
     title: "Sales Tax Calculator",
     description:
-      "An Android app to calculate sales state and provincial tax calculations.",
+      "Calculates state and provincial sales tax. Features predefined tax rates for multiple states/provinces, streamlined calculation processes and an intuitive user interface. Achieved over 10,000 downloads on the Google Play Store.",
     technologies: ["Kotlin", "Jetpack Compose", "MVVM", "Material Design"],
     link: "https://play.google.com/store/apps/details?id=salestaxcalculator.example.bcsalestax",
     github: "https://github.com/Ben-ayesu/Sales_Tax",
@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Track it",
     description:
-      "A sprint workout tracking app to help athletes log, analyze, and visualize performance data.",
+      "A sprint workout tracking app to help athletes log, analyze, and visualize performance data. Features include precise timing, distance tracking, repetition logging, customizable graphs, comparison tools.",
     technologies: [
       "JavaScript",
       "Node.js",
@@ -26,12 +26,12 @@ const projects = [
     video: "/trackit.mp4",
   },
   {
-    title: "Brainstation Telus Industry Hackathon",
+    title: "Restuarant Reservation App",
     description:
-      "Developed an interactive questionnaire to optimize the bundling of Telus TV packages.",
-    technologies: ["JavaScript", "React JS", "SCSS"],
-    link: "https://github.com/Ben-ayesu/brainflix",
-    video: "/trackit.mp4",
+      "Designed and built a mobile restaurant reservation app, enabling users to browse restaurant listings, select available time slots, and book reservations seamlessly. Developed with a focus on user-friendly interfaces.",
+    technologies: ["Swift", "SwiftUI"],
+    github: "https://github.com/Ben-ayesu/Little-Lemon-reservation-app",
+    video: "/Littlelemon.mp4",
   },
 ];
 

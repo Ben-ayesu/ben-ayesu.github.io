@@ -50,6 +50,10 @@ body.dark {
 }
 
 /* Unstyled list item styles */
+.unstyled li {
+  margin-bottom: 1.5rem;
+}
+
 .unstyled li a.active {
   font-weight: bold;
   color: rgb(59, 130, 246);
@@ -104,19 +108,6 @@ body.dark {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
-  .unstyled {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .unstyled li {
-    margin-bottom: 0.5rem;
-  }
-}
-
 @media (max-width: 768px) {
   .flex.items-center {
     justify-content: flex-end;
