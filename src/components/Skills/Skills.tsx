@@ -14,7 +14,7 @@ const Skills = () => {
     : skills.flatMap((category) => category.list);
 
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-8 md:py-16">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-16 text-center">
           My Current Stack

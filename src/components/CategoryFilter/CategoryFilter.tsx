@@ -18,7 +18,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
   return (
     <ul className="unstyled mb-16 flex items-start">
       <li className="mx-2">Filter by :</li>
-      <li className="mx-2">
+      <li className="mx-2 mb-10">
         <a
           href="#all"
           className={activeCategory === null ? "active" : ""}
