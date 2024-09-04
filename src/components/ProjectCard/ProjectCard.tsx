@@ -22,7 +22,7 @@ const ProjectCard = ({
   return (
     <div
       className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg transition duration-300 ${
-        featured ? "md:col-span-2 transform hover:scale-105" : "hover:shadow-xl"
+        featured ? "md:col-span-2" : "hover:shadow-xl"
       } relative`}
     >
       {/* Video */}
