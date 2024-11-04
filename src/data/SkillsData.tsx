@@ -8,15 +8,13 @@ const skills = [
       { name: "JavaScript", proficiency: 5 },
       { name: "React JS", proficiency: 4 },
       { name: "Typescript", proficiency: 3 },
+      { name: "Kotlin", proficiency: 4 },
     ],
   },
   {
     category: "Backend",
     list: [
-      { name: "Python", proficiency: 4 },
       { name: "Node.js", proficiency: 3 },
-      { name: "Java", proficiency: 3 },
-      { name: "Kotlin", proficiency: 4 },
       { name: "MySQL", proficiency: 3 },
       { name: "RESTful APIs", proficiency: 4 },
     ],
@@ -26,8 +24,7 @@ const skills = [
     list: [
       { name: "Jetpack Compose", proficiency: 4 },
       { name: "Git", proficiency: 5 },
-      { name: "Testing", proficiency: 4 },
-      { name: "Google Cloud", proficiency: 3 },
+      { name: "Unit Testing", proficiency: 4 },
       { name: "Google Generative AI", proficiency: 3 },
     ],
   },

@@ -33,6 +33,15 @@ const projects = [
     github: "https://github.com/Ben-ayesu/Little-Lemon-reservation-app",
     video: "/Littlelemon.mp4",
   },
+  {
+    title: "yldlyfe - E-commerce Website Design & Development",
+    description:
+      "Developed a user-friendly e-commerce website for yldlyfe, featuring a streamlined product browsing experience, secure signup process, and an informative 'About Us' section to enhance brand identity.",
+    technologies: ["TypeScript", "CSS", "JavaScript"],
+    link: "https://yldlyfe.vercel.app/",
+    github: "https://github.com/Ben-ayesu/yldlyfe",
+    video: "/Littlelemon.mp4",
+  },
 ];
 
 export default projects;
