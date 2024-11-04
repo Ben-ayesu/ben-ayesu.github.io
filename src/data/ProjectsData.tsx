@@ -26,7 +26,7 @@ const projects = [
     video: "/videos/trackit.mp4",
   },
   {
-    title: "yldlyfe - E-commerce Website Design",
+    title: "yldlyfe - E-commerce Website",
     description:
         "Developed a user-friendly landing page for yldlyfe.",
     technologies: ["TypeScript", "CSS", "JavaScript", "Tailwind CSS", "Framer motion"],
