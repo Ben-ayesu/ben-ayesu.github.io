@@ -26,6 +26,22 @@ const projects = [
     video: "/videos/trackit.mp4",
   },
   {
+    title: "Balanced Embodied Elite",
+    description:
+        "Developed a website for Balanced Embodied, an athletic performance and wellness company, to showcase their services, training programs, and expert team. The site features a modern design, smooth animations, and clear information architecture to enhance user engagement and promote the company's brand.",
+    technologies: [
+      "JavaScript",
+      "TypeScript",
+      "React JS",
+      "TailwindCSS",
+      "HTML",
+      "Framer motion"
+    ],
+    link: "https://balanceembodiedelite.com/",
+    github: "https://github.com/Ben-ayesu/atg",
+    video: "/videos/beembodied.mp4",
+  },
+  {
     title: "yldlyfe - E-commerce Website",
     description:
         "Developed a user-friendly landing page for yldlyfe.",
